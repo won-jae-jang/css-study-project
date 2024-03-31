@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* landing css */
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  flex-wrap: wrap; */
+  align-items: center;
+  height: 568px;
+  background-color: #fdded8;
+}
+
+.landing-title {
+  margin-top: 70px;
+  font-size: 70px;
+  text-align: center;
+}
+
+.landing-body-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#landing-body {
+  font-size: 18px;
+}
+
+.landing-btn-container {
+  margin-top: 30px;
+}
+
+.landing-btn {
+  width: 160px;
+  height: 56px;
+}
+
+#apply-btn {
+  background-color: #3040c4;
+  color: #fff;
+}
+
+#learn-btn {
+  background-color: #fff;
+  color: #3040c4;
+}
+
+/* service css */
+
+.service {
+  height: 340px;
+  background-color: rgb(243, 240, 240);
+  padding-top: 70px;
+}
+
+.service-title {
+  margin-bottom: 15px;
+  width: 370px;
+}
+
+#service-body1 {
+  width: 370px;
+}
+
+#service-body2 {
+  width: 450px;
+}
+
+/* program */
+.program {
+  height: 800px;
+  background-color: #fff;
+}
+
+.program-textarea {
+  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#program-category {
+  color: #009b4d;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#program-title {
+  font-size: 56px;
+  letter-spacing: -3%;
+  margin-bottom: 30px;
+}
+
+#program-desc {
+  width: 770px;
+  height: 96px;
+}
+
+.program-images {
+  margin-top: 25px;
+  margin-left: 0;
+  display: flex;
+  flex-direction: row;
+  width: 930px;
+  height: 299px;
+}
+
+.image-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 290px;
+  height: 299px;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.program-img {
+  width: 142px;
+  height: 195px;
+}
+
+#campus-area,
+#flex-area,
+#remote-area {
+  background-color: #fff;
+  box-shadow: 0px 3px 3px 0 grey;
+}
+
+#campus-area:hover,
+#flex-area:hover,
+#remote-area:hover {
+  background-color: #3141c5;
+  color: #fff;
+  cursor: pointer;
+}
+
+#campus-area:hover .imgea-desc,
+#flex-area:hover .imgea-desc,
+#remote-area:hover .imgea-desc {
+  color: #fff; /* 자식 요소에 대한 스타일 적용 */
+}
+
+#remote-area {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.imgea-desc {
+  padding-top: 15px;
+  font-weight: 700;
+}
+
+/* >= 768 (desktop) */
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 22px;
+    line-height: 1.36363636;
+  }
+}
+
+/* custom grid system  */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+/* reset css */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-size: 16px;
+  border: none;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2b292d;
+  letter-spacing: -0.01em;
+}
